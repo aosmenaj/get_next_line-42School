@@ -23,6 +23,6 @@ The `get_next_line` function works as follows:
 - 📦 **Uses a static variable** to store leftover data between function calls, allowing the function to "remember" unread content.
 - 📚 **Handles multiple file descriptors** simultaneously (BONUS): It manages separate buffers for each `fd` using static storage indexed per descriptor.
 
-> ℹ️ **Note:** You can define the buffer size at compile time using:
-> ```bash
-> gcc -D BUFFER_SIZE=42 ...
+ℹ️ **Note:** You can define the buffer size at compile time using:
+ ```bash
+ gcc -D BUFFER_SIZE=42 ...
